@@ -1,23 +1,50 @@
-# 📌 Projeto de Banco de Dados - Módulo SQL
+ Minhas Atividades de Java com Banco de Dados
+Este repositório foi criado para centralizar e organizar todas as atividades práticas desenvolvidas durante as aulas de Banco de Dados e integração com Java (JDBC). Aqui você encontrará os scripts SQL e os códigos-fonte de cada projeto.
 
-> **Status do Projeto:** 🚀 Concluído (8/8 Atividades)
-> Este repositório centraliza a entrega de todas as atividades práticas baseadas no ecossistema de banco de dados (Pessoas, Clientes, Compras, Produtos e Recibos).
+📌 Índice de Projetos
+Abaixo estão listados todos os sistemas desenvolvidos, com links diretos para suas respectivas pastas e uma breve descrição do que foi aprendido.
 
----
-
-## 📂 Guia de Atividades (Acesso Rápido)
-
-Escolha a atividade desejada abaixo. Os links direcionam você imediatamente para a pasta correspondente ou direto para o arquivo de script SQL de resolução.
-
-| Atividade | Foco de Estudo | 📂 Diretório | 📜 Código Fonte |
-| :---: | :--- | :---: | :---: |
-| **01** | Modelagem Conceitual e Criação de Tabelas | [**Acessar Pasta**](./atividade_01) | [**Ver script.sql**](./atividade_01/script.sql) |
-| **02** | População de Dados (`INSERT INTO`) | [**Acessar Pasta**](./atividade_02) | [**Ver script.sql**](./atividade_02/script.sql) |
-| **03** | Consultas e Filtragens (`SELECT / WHERE`) | [**Acessar Pasta**](./atividade_03) | [**Ver script.sql**](./atividade_03/script.sql) |
-| **04** | Relacionamentos e Junções (`JOINs`) | [**Acessar Pasta**](./atividade_04) | [**Ver script.sql**](./atividade_04/script.sql) |
-| **05** | Agrupamentos e Agregações (`GROUP BY`) | [**Acessar Pasta**](./atividade_05) | [**Ver script.sql**](./atividade_05/script.sql) |
-| **06** | Atualizações e Deleções (`UPDATE / DELETE`) | [**Acessar Pasta**](./atividade_06) | [**Ver script.sql**](./atividade_06/script.sql) |
-| **07** | Subqueries e Visões (`VIEWS`) | [**Acessar Pasta**](./atividade_07) | [**Ver script.sql**](./atividade_07/script.sql) |
-| **08** | Índices e Relatório de Performance | [**Acessar Pasta**](./atividade_08) | [**Ver script.sql**](./atividade_08/script.sql) |
-
----
+🚗 1. Sistema de Controle de Estacionamento
+O que faz: Gerencia o fluxo de entrada, permanência e saída de veículos, calculando o valor a ser pago e guardando um histórico.
+Conceitos aplicados: PRIMARY KEY, AUTO_INCREMENT, chaves estrangeiras e manipulação de datas (DATETIME).
+📂 Acessar arquivos desta atividade
+📂 Ver Script SQL desta atividade
+🩺 2. Sistema Médico
+O que faz: Controla o cadastro de pacientes (com trava de CPF único), médicos e o agendamento de consultas por especialidade.
+Conceitos aplicados: Restrição de unicidade (UNIQUE KEY), chaves estrangeiras (FOREIGN KEY) e relacionamentos entre tabelas.
+📂 Acessar arquivos desta atividade
+📂 Ver Script SQL desta atividade
+💳 3. Sistema de Conta de Usuário e Assinaturas
+O que faz: Faz a gestão do acesso de utilizadores a diferentes planos de subscrição (ex: Bronze, Prata, Ouro) e controla as restrições de e-mail único.
+Conceitos aplicados: Uso de chaves exclusivas (UNIQUE KEY), tabelas associativas para relações muitos-para-muitos e mapeamento preciso de valores monetários com DECIMAL.
+📂 Acessar arquivos desta atividade
+📄 Ver Script SQL desta atividade
+📚 4. Sistema de Biblioteca Escolar
+O que faz: Controla o empréstimo de livros por alunos, acompanhando o status de disponibilidade do livro, o total de obras com o estudante e se ele possui multas pendentes.
+Conceitos aplicados: Uso de chaves primárias definidas manualmente (PRIMARY KEY), valores padrão para novos registros (DEFAULT 0 e DEFAULT 1)`.
+📂 Acessar arquivos desta atividade
+📄 Ver Script SQL desta atividade
+🍔 5. Sistema de Delivery
+O que faz: Controla o fluxo de pedidos de um aplicativo de entregas, registrando as credenciais de acesso dos usuários, o cardápio de produtos e os detalhes de fechamento de cada compra (taxas, totais e formas de pagamento).
+Conceitos aplicados: Uso de chaves primárias mistas (manuais e AUTO_INCREMENT), tipo DATETIME para registro de carimbo de data/hora, e o tipo DECIMAL(10,2) para cálculos financeiros precisos de taxas e totais.
+📂 Acessar arquivos desta atividade
+📄 Ver Script SQL desta atividade
+✈️ 6. Sistema de Passagens Aéreas
+O que faz: Controla o registro de emissão de bilhetes aéreos, armazenando os dados dos passageiros, identificação do voo, classe de assento selecionada e o cálculo financeiro entre o preço original da passagem e o preço final praticado com descontos ou taxas.
+Conceitos aplicados: Cláusula de segurança IF NOT EXISTS na criação de tabelas, controle de chaves numéricas sequenciais (AUTO_INCREMENT) e uso do tipo numérico de alta precisão DECIMAL para transações de valores monetários.
+📂 Acessar arquivos desta atividade
+📄 Ver Script SQL desta atividade
+🏨 7. Sistema de Reserva de Hotel
+O que faz: Gerencia a ocupação de um hotel, controlando o cadastro de quartos (valores de diárias e tipos) e o fluxo de hospedagem (Check-in e Check-out), vinculando os dados cadastrais do cliente ao quarto escolhido e calculando o valor total da estadia.
+Conceitos aplicados: Relacionamento um-para-muitos via chave estrangeira (FOREIGN KEY), uso de tipos temporais (DATETIME) para controle de períodos de reserva, e integridade referencial entre tabelas.
+📂 Acessar arquivos desta atividade
+📄 Ver Script SQL desta atividade
+🛒 8. Sistema de Compra Online e Recibos
+O que faz: Simula o fluxo de um e-commerce, separando o cadastro físico de pessoas, a identificação como clientes com endereço de entrega, o fechamento da compra (com frete e valores) e a emissão de recibos e catálogo de produtos.
+Conceitos aplicados: Uso de campos enumerados (ENUM) para restringir as formas de pagamento válidas, chaves estrangeiras (FOREIGN KEY) para criar vínculos e herança lógica entre tabelas (Pessoa -> Cliente) e tipos numéricos de alta capacidade DECIMAL(15,2).
+📂 Acessar arquivos desta atividade
+📄 Ver Script SQL desta atividade
+🛠️ Tecnologias Utilizadas Geral
+Linguagem de Programação: Java
+Banco de Dados: MySQL / MariaDB
+Conexão: JDBC (Java Database Connectivity)
