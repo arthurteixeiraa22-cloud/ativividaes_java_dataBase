@@ -34,7 +34,7 @@ Abaixo estão listados todos os sistemas desenvolvidos, com links diretos para s
 * **O que faz:** Controla o empréstimo de livros por alunos, acompanhando o status de disponibilidade do livro, o total de obras com o estudante e se ele possui multas pendentes.
 * **Conceitos aplicados:** Uso de chaves primárias definidas manualmente (`PRIMARY KEY`), valores padrão para novos registros (`DEFAULT 0` e `DEFAULT 1`).
 * 📂 [Acessar arquivos desta atividade](./Sistema_de_Controle_de_Biblioteca_Escolar_Refatorado_Interacao_Banco_De_Dados)
-* 📄 [Ver Script SQL desta atividade](./Exercicio_4_Estacionamento.sql)
+* 📄 [Ver Script SQL desta atividade](.Exercicio_1_Biblioteca_Escolar.sql)
 
 ### 🍔 5. Sistema de Delivery
 
